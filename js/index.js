@@ -48,3 +48,28 @@ window.addEventListener(`load`, e=>{alert(`READY FOR FUN`)});
 
 const text=document.querySelector(`textarea`);
 text.addEventListener(`select`, e=>{text.style.color=`red`});
+
+//------Stretch-----
+const textStuff=document.querySelector(`textarea`);
+
+textStuff.addEventListener(`mouseover`,e=>{
+    textStuff.textContent="THERE IS ONLY FUN";
+    TweenMax.to(e.currentTarget, 1, {
+        width:30,
+        height:30,
+        ease: Bounce.easeOut
+      });
+})
+
+const imgStuff=document.querySelector(`.home .content-destination img`);
+
+imgStuff.addEventListener(`mouseover`,e=>{
+    imgStuff.textContent="THERE IS ONLY FUN";
+    TweenMax.to(e.currentTarget, 5, {
+        width:100,
+        height:100,
+        ease:RoughEase.ease.config({ template:  Power0.easeNone, strength: 1, points: 20, taper: "none", randomize: true, clamp: false})
+      });
+})
+
+
