@@ -41,8 +41,10 @@ copyStuff.addEventListener(`wheel`, e=>{
 });
 
 //------9-------
-const dest=document.querySelectorAll(`.destination`);
-dest.addEventListener(`focus`, e=> {e.style.background=`orange`});  
+window.addEventListener(`load`, e=>{alert(`READY FOR FUN`)});
 
 
 //------10-------
+
+const text=document.querySelector(`textarea`);
+text.addEventListener(`select`, e=>{text.style.color=`red`});
