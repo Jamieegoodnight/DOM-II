@@ -1,10 +1,12 @@
 // Your code goes here
 
 
+// I used mouseleave, mouseover, dblclick, keypress, copy, dragend, mouseout, wheel, load, and select.
+
 // -----1-----
 const ride=document.querySelector('.main-navigation');
 
-ride.addEventListener('mouseover', e => { 
+ride.addEventListener('mouseleave', e => { 
 console.log(`RIDE THE FUN BUS`)
 })
 //-----2------
@@ -13,6 +15,10 @@ navStuff[0].addEventListener(`mouseover`, e => {navStuff[0].style.color=`pink`})
 navStuff[1].addEventListener(`mouseover`, e => {navStuff[1].style.color=`green`});
 navStuff[2].addEventListener(`mouseover`, e => {navStuff[2].style.color=`orange`});
 navStuff[3].addEventListener(`mouseover`, e => {navStuff[3].style.color=`blue`});
+//------3------
+const copyStuff=document.querySelector(`body`);
+copyStuff.addEventListener(`copy`, e=>{alert('HAVE YOUR OWN FUN! THAT IS MY FUN!')});
+
 //------4-------
 const dblHeading=document.querySelector(`.logo-heading`);
 dblHeading.addEventListener(`dblclick`, e=>{dblHeading.style.fontFamily=`Amatic SC`, `cursive`});
@@ -21,10 +27,9 @@ dblHeading.addEventListener(`dblclick`, e=>{dblHeading.style.fontFamily=`Amatic 
 const keyPress=document.querySelector(`body`);
 keyPress.addEventListener(`keypress`, e=> {alert("ARE YOU HAVING FUN?")});
 
-
+ 
 //------6-------
-const copyStuff=document.querySelector(`body`);
-copyStuff.addEventListener(`copy`, e=>{alert('HAVE YOUR OWN FUN! THAT IS MY FUN!')});
+copyStuff.addEventListener(`dragend`, e=> {alert("Nobody ever gets off the FUN BUS")});
 
 //------7-------
 const moreNav=document.querySelectorAll(`nav a`);
