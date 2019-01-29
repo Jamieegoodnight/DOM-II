@@ -60,7 +60,7 @@ const textStuff=document.querySelector(`textarea`);
 textStuff.addEventListener(`mouseover`,e=>{
     textStuff.textContent="THERE IS ONLY FUN";
     TweenMax.to(e.currentTarget, 1, {
-        width:30,
+        width:60,
         height:30,
         ease: Bounce.easeOut
       });
@@ -69,7 +69,6 @@ textStuff.addEventListener(`mouseover`,e=>{
 const imgStuff=document.querySelector(`.home .content-destination img`);
 
 imgStuff.addEventListener(`mouseover`,e=>{
-    imgStuff.textContent="THERE IS ONLY FUN";
     TweenMax.to(e.currentTarget, 5, {
         width:100,
         height:100,
@@ -77,4 +76,20 @@ imgStuff.addEventListener(`mouseover`,e=>{
       });
 })
 
+// Functions
 
+
+// let imageBus = document.querySelector('.img1');
+// window.addEventListener('keydown', (e) => {
+//   imageBus.classList.toggle('display-none');
+// });
+// setTimeout(function(){ alert("Hello"); }, 3000);
+// var myVar;
+
+// function myFunction() {
+//   myVar = setTimeout(alertFunc, 3000);
+// }
+
+// function alertFunc() {
+//   alert("Hello!");
+// }
